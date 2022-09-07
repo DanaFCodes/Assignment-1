@@ -1,0 +1,389 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+html {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 62.5%;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    {
+        display: flex;
+        flex-direction: column;
+        }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {}
+/* HEADER */
+
+header {
+    background-image: url(./assets/image-1.jpg);
+    height: 40%;
+    max-width: 3000px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: -11px;
+    position: relative;
+}
+
+header .wrapper {
+    display: flex;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-size: 4.9rem;
+    font-style: italic;
+    font-weight: 600;
+    flex-shrink: 1;
+    flex-grow: 1;
+    color: #fcfcfc;
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 4rem;
+    padding-top: 5%;
+}
+
+.navBar li a {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    flex-shrink: 1;
+    flex-grow: 1;
+    color: #fcfcfc;
+}
+
+.logo {
+    font-size: 15rem;
+    color: #fcfcfc;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2% 26%;
+    line-height: 100px;
+    letter-spacing: 3px;
+    padding-bottom: 15%;
+    flex-basis: 50%;
+}
+
+h1 {
+    font-size: 70%;
+    font-weight: 400;
+    text-align: center;
+}
+
+h1 div {
+    font-style: italic;
+    font-size: 150%;
+    text-align: center;
+}
+
+.social {
+    position: absolute;
+    bottom: 12%;
+    right: 4%;
+    list-style-type: none;
+    line-height: 18px;
+    transform: scale(2);
+}
+
+aside a {
+    color: white;
+}
+
+/* MAIN */
+
+.news h2 {
+    text-align: center;
+    font-size: 4.9rem;
+    text-transform: uppercase;
+    margin: 120px;
+    color: #000;
+    font-weight: 600;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery li {
+    width: calc(100%/3 - 20px);
+    height: 100%;
+    list-style-type: none;
+}
+
+.gallery img {
+    max-width: 100%;
+    margin-bottom: 10%;
+}
+
+
+.thisWeek .wrapper {
+    display: flex;
+}
+
+.highlightContainer img{
+    width: 150%;
+    height: 100%;
+    /* margin-left: 25%; */
+}
+
+.highlightText {
+    margin-left: 15%;
+    margin-top: -4%;
+}
+
+.highlightText h2 {
+    font-size: 4.9rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+
+.highlightText p {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    margin-top: -20px;
+    /* margin-left: 30px; */
+}
+
+.thisWeek button {
+    background-color: rgba(24, 52, 153, 0.78);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+    color: #fcfcfc;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+    border: none;
+    padding: 1%;
+    text-transform: uppercase;
+    margin-top: 2%;
+}
+
+/* TREND-ASSETS WERE RECTANGLES NOT SQUARES🥲*/
+.newTrends {
+    display: flex;
+}
+
+.trendBox1  {
+    margin: 3%;
+    margin-top: 6%;
+}
+
+.trendBox1 h2 {
+    font-size: 4.9rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+} 
+
+.trendBox1 p {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    margin-top: -20px;
+    width: 100%;
+    padding-right: 5%;
+}
+
+.trendBox1 button {
+    background-color: rgba(24, 52, 153, 0.78);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+    color: #fcfcfc;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+    border: none;
+    padding: 1%;
+    text-transform: uppercase;
+    margin-top: 2%;
+}
+
+.trendBox2 {
+    width: 40%;
+    height: 100%;
+    transform: scale(0.6);
+    margin-top: -25px;
+    margin-right: 268px;
+}
+
+.newTrends {
+    display: flex;
+}
+
+.trendBox1  {
+    margin: 3%;
+    margin-top: 6%;
+}
+
+.trendBox1 h2 {
+    font-size: 4.9rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+} 
+
+.trendBox1 p {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    margin-top: -20px;
+    width: 100%;
+    padding-right: 5%;
+}
+
+.trendBox1 button {
+    background-color: rgba(24, 52, 153, 0.78);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+    color: #fcfcfc;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+    border: none;
+    padding: 1%;
+    text-transform: uppercase;
+    margin-top: 2%;
+}
+
+.trendBox2 {
+    width: 40%;
+    height: 100%;
+    transform: scale(0.6);
+    margin-top: -25px;
+    margin-right: 268px;
+}
+
+.newTrendsBottom {
+    display: flex;
+}
+
+.trendBox3 {
+    width: 40%;
+    height: 100%;
+    transform: scale(0.6);
+    margin-top: -260px;
+    margin-left: -115px;
+}
+
+.trendBox4 {
+    margin-left: 260px;
+    margin-top: -125px;
+}
+
+.trendBox4 h2 {
+    font-size: 4.9rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+
+.trendBox4 p {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    margin-top: -20px;
+    width: 100%;
+    padding-right: 5%;
+}
+
+.trendBox4 button {
+    background-color: rgba(24, 52, 153, 0.78);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+    color: #fcfcfc;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+    border: none;
+    padding: 1%;
+    text-transform: uppercase;
+    margin-top: 2%;
+}
+
+/* WHY IS THERE SPACE BEFORE THIS? */
+.shopCommunityEvents {
+    background-image: url(./assets/image-8.jpg);
+    background-image: cover;
+    height: 80vh;
+}
+
+.flexAtTheBottom,
+.flexAtTheRealBottom {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    list-style: none;
+    align-items: center;
+    color: white;
+    font-size: 3.5rem;
+    padding-top: 5%;
+    margin-bottom: -3%;
+} 
+
+.shopCommunityEvents i {
+    transform: scale(2);
+}
+
+.footerFlex {
+    display: flex;
+    background-color: #e3e3e3;
+}
+
+.footerForm {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.footerForm h3 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+
+.footerForm p {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    margin-top: -20px;
+    width: 100%;
+}
+
+.footerForm button {
+    background-color: black;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.8rem;
+    color: #fcfcfc;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    padding: 1%;
+    text-transform: uppercase;
+}
+
+.footerNav {
+    flex-direction: column;
+    font-size: 2rem;
+    
+}
+.finalFooter {
+    background-color: #acacac;
+    text-align: center;
+}
